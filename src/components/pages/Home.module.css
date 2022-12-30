@@ -1,0 +1,162 @@
+.home_container{
+    width: 100%;
+    height: 100%;
+}
+
+.home_content{
+    display: flex;
+}
+
+.home{
+    width: 75vw;
+    height: 87vh;
+    background-image: linear-gradient(to bottom, #202020, #121212);
+    display: flex;
+    flex-direction: column;
+}
+
+.home_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    transition: 0.5s;
+}
+
+.home_musics{
+    padding: 15px 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: auto;
+}
+
+.home_musics::-webkit-scrollbar{
+    width: 15px;
+}
+
+.home_musics::-webkit-scrollbar-track {
+    background: none;
+}
+
+.home_musics::-webkit-scrollbar-thumb{
+    transition: 0.3s;
+}
+
+.home_musics::-webkit-scrollbar-thumb {
+    background-color: #666;
+}
+
+.back_page,
+.next_page{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+.activeHeader{
+    background: #070707;
+}
+
+.back_page > *,
+.next_page > *{
+    width: 30px;
+    height: 30px;
+}
+
+.back_page:hover,
+.next_page:hover{
+    background: #000;
+    cursor: pointer;
+}
+
+.history_pages{
+    display: flex;
+    gap: 20px;
+}
+
+.accout_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    background-color: #00000099;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 0px 2px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.accout_info:hover{
+    background: #99999920;
+}
+
+.active{
+    background: #99999920;
+}
+
+.avatar{
+    background-color: #666;
+    padding: 2px 3px;
+    border-radius: 50%;
+}
+
+.avatar > *{
+    width: 20px;
+    height: 20px;
+}
+
+.down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.down > *{
+    width: 15px;
+    height: 20px;
+}
+
+.account_control{
+    position: absolute;
+    top: 120%;
+    right: 0%;
+    width: 200px;
+    padding: 5px;
+    background-color: #303030;
+    box-shadow: 0px 2px 20px -10px black;
+    border-radius: 6px;
+    cursor: initial;
+}
+
+.account_control div{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.account_control div:hover{
+    background-color: #66666660;
+}
+
+.account_control div:nth-of-type(1){
+    border-bottom: 1px solid #404040;
+}
+
+.recently_musics,
+.featured_musics,
+.category_musics{
+    display: flex;
+    gap: 20px;
+}
+

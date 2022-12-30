@@ -1,0 +1,7 @@
+.active p{
+    opacity: 1;
+}
+
+.active > *:first-child{
+    opacity: 1;
+}

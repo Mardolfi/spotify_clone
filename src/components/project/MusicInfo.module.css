@@ -1,0 +1,91 @@
+.music_img{
+    width: 40px;
+    height: 40px;
+}
+
+.music_img img{
+    width: inherit;
+}
+
+.music_container{
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    border-radius: 5px;
+    gap: 20px;
+    transition: .3s;
+    position: relative;
+    align-items: center;
+}
+
+.music_container:hover{
+    background-color: #40404099;
+    background-image: none;
+}
+
+.music_title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 33%;
+}
+
+.music_title h3{
+    height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.music_title h3:hover{
+    text-decoration: underline;
+}
+
+.music_author{
+    font-size: 0.8rem;
+    color: #999;
+    font-weight: 600;
+}
+
+.play{
+    position: absolute;
+    color: #1FDF64;
+    right: 20px;
+    bottom: 80px;
+    background: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.play > *{
+    width:inherit;
+    height: inherit;
+}
+
+.music_container:hover .play{
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.active{
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.album_name{
+    height: 15px;
+    overflow: hidden;
+    flex: 33%;
+    opacity: 0.8;
+}
+
+.mins{
+    flex: 33%;
+    opacity: 0.8;
+}

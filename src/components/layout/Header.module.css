@@ -1,0 +1,124 @@
+.header_container{
+    width: 25vw;
+    background-color: black;
+    height: 87vh;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.icon > *{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 5px;
+    font-size: 1.1rem;
+}
+
+.icon > * > *:first-child{
+    width: 43px;
+    height: 43px;
+}
+
+.action_control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action_control > * {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 15px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.action_control > * p{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.action_control > *:hover p{
+    opacity: 1;
+}
+
+.action_control > * > *:first-child{
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+}
+
+.playlist_control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid #333;
+    padding: 10px 0px;
+}
+
+.playlist_control > * {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 15px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.playlist_control > * p{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.playlist_control > *:hover p{
+    opacity: 1;
+}
+
+.playlist_control > * > *:first-child{
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+}
+
+.playlists_name{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -10px;
+    text-decoration: none;
+    color: white;
+}
+
+.playlists_name div > * {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    gap: 15px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.playlists_name > * p{
+    opacity: 0.8;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+
+.playlists_name > *:hover p{
+    opacity: 1;
+}

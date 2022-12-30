@@ -1,0 +1,172 @@
+.footer_container{
+    width: 100vw;
+    height: 13vh;
+    background: #181818;
+    border-top: 1px solid #333;
+    padding: 20px;
+    display: flex;
+    color: white;
+}
+
+.music_info{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 15px;
+}
+
+.music_info_names{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.music_name{
+    height: 15px;
+    overflow: hidden; 
+    width: 300px;
+}
+
+@keyframes to-side {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-5%);
+    }
+}
+
+.music_name h4{
+    width: max-content;
+    animation: to-side 5s infinite alternate linear;   
+    font-size: 0.8rem;
+}
+
+.music_img{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music_img img{
+    width: inherit;
+    height: inherit;
+}
+
+.music_author{
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.like{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like > *{
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.like > *:hover{
+    opacity: 1;
+}
+
+.action_control{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.play_pause{
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.play_pause > * {
+    width: 25px;
+    height: 25px;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.play_pause > *:hover{
+    opacity: 1;
+}
+
+.play_pause > *:active{
+    transform: scale(0.95);
+}
+
+.play_pause > *:nth-child(3){
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+}
+
+.music_bar{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 0.8rem;
+}
+
+.music_bar p{
+    opacity: 0.6;
+}
+
+.bar{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #ffffff50;
+    border-radius: 20px;
+    margin-bottom: 4px;
+}
+
+.bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.volume{
+    margin-left: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume > *:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.volume > *:nth-child(1):hover{
+    opacity: 1;
+}
+
+.active{
+    color: #1CA74E;
+    opacity: 1;
+}
