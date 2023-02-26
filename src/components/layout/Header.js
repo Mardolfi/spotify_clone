@@ -47,7 +47,7 @@ function Header({ auth }) {
     }, [])
 
     function createPlaylist() {
-        let nameOfPlaylist = playlists[playlists.length - 1].name
+        let nameOfPlaylist = playlists[playlists.length - 1]?.name
         nameOfPlaylist = String(nameOfPlaylist).split('º')
         nameOfPlaylist = nameOfPlaylist[1].trim();
 
@@ -99,13 +99,13 @@ function Header({ auth }) {
                     <MdAddBox />
                     <p>Criar playlist</p>
                 </button>
-                <CustomLink to={'/like/'}>
+                <div>
                     <BiHeartSquare />
                     <p>Músicas Curtidas</p>
-                </CustomLink>
+                </div>
             </div>
             <div className={styles.playlists_name}>
-                {playlists.map((playlist) => (
+                {playlists.length > 0 && playlists.map((playlist) => (
                     <div key={playlist.id}>
                         <CustomLink to={`playlist/${playlist.id}`}>
                             <p>{playlist.name}</p>
